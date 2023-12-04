@@ -7,12 +7,13 @@ Created on Mon Dec  4 02:20:48 2023
 
 class Kargo:
     
-    def __init__(self, kargo_id, kargo_ad, alici, gonderici,durum):
+    def __init__(self, kargo_id, kargo_ad, alici, gonderici, adres, durum):
  
         self.kargo_id = kargo_id
         self.kargo_ad = kargo_ad
         self.alici = alici
         self.gonderici = gonderici
+        self.adres=adres
         self.durum = durum
        
 
@@ -22,12 +23,13 @@ class Kargo:
         print("Kargo Adı:", self.kargo_ad)
         print("Alıcı:", self.alici)
         print("Gönderici:",self.gonderici)
+        print("Adres:",self.adres)
         print("Durumu:", self.durum)
         
-        #gıncelleme
-kargo1=Kargo(22, "ABC Kargo", "Ahmet Demir", "Çiçek Mağazası","Hazırlanma Aşamasında")
-kargo2=Kargo(33, "Hızlı Kargo", "Ayşe Yılmaz", "Elektronik Mağazası","Adrese Teslim")
-kargo3=Kargo(44, "Hızlı Kargo", "Mehmet Kara", "Elektronik Mağazası","Teslim Edildi")
+    
+kargo1=Kargo(22, "ABC Kargo", "Ahmet Demir", "Çiçek Mağazası", "Kuruçeşme İzmir","Hazırlanma Aşamasında")
+kargo2=Kargo(33, "Hızlı Kargo", "Ayşe Yılmaz", "Elektronik Mağazası","Etimesgut Ankara", "Adrese Teslim")
+kargo3=Kargo(44, "Hızlı Kargo", "Mehmet Kara", "Elektronik Mağazası","İzmit Kocaeli","Teslim Edildi")
 
 kargo1.bilgileri_goster()
 kargo2.bilgileri_goster()
